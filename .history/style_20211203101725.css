@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  border: 1px solid blue;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid yellowgreen;
+  float: left;
+}
+.logo > img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+ul > li {
+  border: 1px solid red;
+  line-height: 32px;
+  float: right;
+  padding: 4px 0.5em;
+}
+ul {
+  /* 必须让其浮动，也让logo浮动，才能让其父容器完全贴合 */
+  float: left;
+}

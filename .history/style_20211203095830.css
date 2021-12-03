@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  border: 1px solid blue;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid yellowgreen;
+  float: left;
+  margin-top: 8px;
+}
+.logo > img {
+  height: 26px;
+  vertical-align: middle;
+}
+
+ul > li {
+  border: 1px solid red;
+
+  float: left;
+  padding: 4px 0.5em;
+  line-height: 32px;
+}
+ul {
+  float: left;
+  display: inline-block;
+}
