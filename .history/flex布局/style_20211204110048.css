@@ -8,10 +8,9 @@ img {
   max-width: 100%;
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+ul,
+ol {
+  list-style: none;
 }
 
 header {
@@ -26,9 +25,14 @@ ol {
 .logo {
   display: inline-block;
   outline: 1px solid yellowgreen;
-  float: left;
+  justify-content: flex-start;
   /* height: 40px; */
 }
+
+header {
+  display: flex;
+}
+
 .logo > img {
   height: 40px;
   vertical-align: middle;
@@ -37,12 +41,13 @@ ol {
 ul > li {
   outline: 1px solid red;
   line-height: 32px;
-  float: left;
   padding: 4px 0.5em;
 }
+
 ul {
+  display: flex;
+  justify-content: flex-end;
   /* 必须让其浮动，也让logo浮动，才能让其父容器完全贴合 */
-  float: right;
 }
 
 .content {
@@ -57,21 +62,21 @@ ul {
 .content > aside {
   width: 190px;
   height: 300px;
-  float: left;
+
   background-color: rgb(83, 147, 119);
 }
 
 .content > main {
   height: 300px;
   width: 500px;
-  float: left;
+
   background-color: rgb(142, 96, 35);
 }
 
 .content > .ad {
   width: 110px;
   height: 300px;
-  float: left;
+
   background-color: rgb(52, 59, 194);
 }
 
@@ -87,7 +92,7 @@ ul {
   background-color: orchid;
   width: 191px;
   height: 191px;
-  float: left;
+
   margin-top: 10px;
   margin-right: 12px;
 }

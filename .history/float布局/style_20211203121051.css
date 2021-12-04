@@ -56,6 +56,7 @@ ul {
 
 .content > aside {
   width: 190px;
+
   height: 300px;
   float: left;
   background-color: rgb(83, 147, 119);
