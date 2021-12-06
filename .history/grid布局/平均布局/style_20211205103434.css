@@ -1,0 +1,12 @@
+.container {
+  border: 0.5px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 800px;
+  grid-gap: 12px;
+}
+.container div {
+  border: 0.5px solid red;
+  height: 191px;
+}

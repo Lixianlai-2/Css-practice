@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+}
+
+.container > * {
+  border: 1px solid blue;
+}

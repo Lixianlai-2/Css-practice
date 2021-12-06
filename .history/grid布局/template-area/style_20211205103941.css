@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+}
+
+header,
+aside,
+main,
+.ad,
+footer {
+  border: 1px solid blue;
+}

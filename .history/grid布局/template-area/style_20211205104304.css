@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside main ad"
+    "footer footer footer";
+}
+
+.container > * {
+  border: 1px solid blue;
+}
+
+header {
+  grid-area: "header";
+}

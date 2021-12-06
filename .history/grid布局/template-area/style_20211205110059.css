@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+  /* 注意，这里的引号之间没有逗号 */
+    "header header header"
+    "aside main ad"
+    ". footer .";
+  /* 设置整个容器的宽度 */
+  width: 800px;
+  /* 占满总页面 */
+  height: 100vh;
+  gap: 10px;
+
+  grid-template-rows: 50px auto 50px;
+  grid-template-columns: 160px auto 160px;
+  /* 让整个容器居中 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container > * {
+  border: 1px solid blue;
+}
+
+header {
+  /* 注意这里不需要引号 */
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+.ad {
+  grid-area: ad;
+}
+
+footer {
+  grid-area: footer;
+}

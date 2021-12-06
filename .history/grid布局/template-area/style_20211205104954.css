@@ -1,0 +1,37 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  /* 注意，这里的引号之间没有逗号 */
+    "header header header"
+    "aside main ad"
+    "footer footer footer";
+  width: 800px;
+  height:100vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 160px auto 160px;
+}
+
+.container > * {
+  border: 1px solid blue;
+}
+
+header {
+  /* 注意这里不需要引号 */
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+.ad {
+  grid-area: ad;
+}
+
+footer {
+  grid-area: footer;
+}
