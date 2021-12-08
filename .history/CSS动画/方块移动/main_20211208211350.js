@@ -1,6 +1,15 @@
+// demo.style.transform = `translateX(${n}px)`;
+
+let n = 0;
+
 setTimeout(() => {
-  demo.classList.add("end");
-}, 500);
+  if (n <= 400) {
+    demo.style.transform = `translateX(${n}px)`;
+    n = n + 1;
+  } else {
+    console.log("停止");
+  }
+}, 3000);
 
 // ------------------------------------------------------------
 

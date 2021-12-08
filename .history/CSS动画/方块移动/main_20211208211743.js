@@ -1,6 +1,8 @@
+
 setTimeout(() => {
-  demo.classList.add("end");
-}, 500);
+  demo.classList.add('end') =
+})
+
 
 // ------------------------------------------------------------
 

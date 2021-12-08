@@ -5,10 +5,9 @@
   position: relative;
   /* left: 0; */
   background-color: grey;
-  /* 线性改变的时间，线性改变 */
   transition: all 1s linear;
 }
 
 #demo.end {
-  transform: translateX(400px);
+  transform: translateX(300px);
 }

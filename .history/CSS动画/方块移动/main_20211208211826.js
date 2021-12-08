@@ -1,7 +1,7 @@
 setTimeout(() => {
   demo.classList.add("end");
-}, 500);
-
+}, 3000);
+}
 // ------------------------------------------------------------
 
 // demo.style.transform = `translateX(${n}px)`;
