@@ -11,7 +11,7 @@
   transition: all 0.5s;
 }
 .left {
-  /* border: 3px solid red; */
+  border: 3px solid red;
   position: absolute;
   width: 100px;
   height: 100px;
@@ -23,7 +23,7 @@
   background-color: red;
 }
 .right {
-  /* border: 3px solid red; */
+  border: 3px solid red;
   position: absolute;
   width: 100px;
   height: 100px;
@@ -35,7 +35,7 @@
 }
 .bottom {
   position: absolute;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 100px;
   height: 100px;
   top: 50%;
